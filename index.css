@@ -6,7 +6,7 @@
 
 
 .navigation {
-  background: linear-gradient(to bottom, #4625ff, #4938ff);
+  background: linear-gradient(to bottom, #f57c00, #ff9800);
   padding: 15px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -85,7 +85,7 @@
   .nav-list li {
     text-align: left;
     width: 100%;
-    background: linear-gradient(to bottom, #4625ff, #4938ff);
+    background: linear-gradient(to bottom, #f57c00, #ff9800);
 
   }
 
