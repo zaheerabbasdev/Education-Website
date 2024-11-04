@@ -1,0 +1,648 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.navigation {
+  background: linear-gradient(to bottom, #4625ff, #4938ff);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.brand span {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 30px;
+}
+
+.nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+  color: #f0f0f0;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 798px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  .nav-list.open {
+    display: flex;
+    transform: translate(-30px);
+    position: absolute;
+    top: 60px;
+
+  }
+
+  .nav-list li {
+    text-align: left;
+    width: 100%;
+    background: linear-gradient(to bottom, #4625ff, #4938ff);
+
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #ffff;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-left: 400px;
+    margin-top: -30px;
+  }
+
+  
+  .hamburger {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s;
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .hamburger:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .hamburger.active {
+    background-color: transparent;
+  }
+
+  .hamburger.active:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .hamburger.active:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  
+}
+
+/* Start Hero Section */
+/* Slideshow container */
+/* Start Hero Section */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Slides */
+.mySlides {
+    display: none; /* Ensure slides are hidden by default */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: absolute; /* Change to absolute to stack slides */
+}
+
+/* Slide Image */
+.slide-image {
+    width: 100%;
+    height: 90vh; /* Make the image cover full viewport height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
+/* Next and Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    padding: 16px;
+    margin-top: -22px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    padding: 16px;
+    position: absolute;
+    bottom: -10px; /* Position at the bottom of the slideshow */
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fade animation */
+/* Fade in */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+/* Fade out */
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+/* Styles for Laptops (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    .slideshow-container {
+        height: 70vh; /* Adjust height for laptops */
+    }
+
+    .slide-image {
+        height: 70vh; /* Adjust image height */
+    }
+
+    .prev, .next {
+        font-size: 22px; /* Adjust button font size */
+        padding: 12px; /* Adjust padding */
+    }
+
+    .dots-container {
+        bottom: 15px; /* Position dots */
+    }
+
+    .dot {
+        height: 12px; /* Adjust dot size */
+        width: 12px; /* Adjust dot size */
+        position: relative;
+        top: -100px;
+        
+    }
+}
+
+/* Styles for iPads (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .slideshow-container {
+        height: 60vh; /* Reduce height for iPads */
+    }
+
+    .slide-image {
+        height: 40vh; /* Match image height */
+    }
+
+    .prev, .next {
+        font-size: 20px; /* Smaller button font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .dots-container {
+        bottom: 12px; /* Adjust dot position */
+    }
+
+    .dot {
+        height: 10px; /* Smaller dots */
+        width: 10px; /* Smaller dots */
+        position: relative;
+        top: -320px;
+      
+    }
+}
+
+/* Styles for Mobile Phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 50vh; /* Further reduce height for mobile */
+    }
+
+    .slide-image {
+        height: 20vh; /* Match image height */
+    }
+
+    .prev, .next {
+        font-size: 18px; /* Smaller button font size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .dots-container {
+        bottom: 8px; /* Adjust dot position */
+    }
+
+    .dot {
+        height: 8px; /* Smaller dots */
+        width: 8px; /* Smaller dots */
+        position: relative;
+        top: -650px;
+    }
+}
+
+
+/* Start of Skill Section */
+.skill-section {
+    padding: 60px 20px; 
+    background-color: #f8f9fa;
+    text-align: center; /* Center align text */
+}
+
+/* Header styling */
+.skill-container h1 {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #343a40; /* Dark color for the heading */
+}
+
+/* Paragraph styling */
+.skill-container p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    color: #555; /* Dark gray color for text */
+    margin-bottom: 40px; /* Space below the paragraph */
+}
+
+/* Row for cards */
+.skill-row {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.skill-circal {
+    width: 87px; /* Width of the circular icon */
+    height: 87px; /* Height of the circular icon */
+    background: #ffffff; /* Background color */
+    border-radius: 50%; /* Circle shape */
+    margin: auto; /* Center horizontally */
+    margin-bottom: 20px; /* Space below the circle */
+    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); /* Shadow effect */
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    color: #000000; /* Icon color */
+    font-size: 2rem; /* Icon size */
+}
+
+
+/* Card styling */
+.skill-card {
+    background-color: white; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 10px; /* Space between cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
+    flex: 1; /* Allow cards to grow and shrink equally */
+    max-width: 400px; /* Max width for cards */
+}
+
+/* Card hover effect */
+.skill-card:hover {
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+/* Responsive styling for laptops */
+@media (max-width: 1024px) {
+    .skill-container h1 {
+        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+    }
+
+    .skill-container p {
+        font-size: 1.1rem; /* Smaller paragraph size */
+    }
+
+    .skill-card {
+        margin: 10px; /* Space between cards */
+        max-width: 300px; /* Reduce max width for laptops */
+        padding: 120px;
+    }
+}
+
+/* Responsive styling for tablets (iPads) */
+@media (max-width: 768px) {
+    .skill-section {
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .skill-container h1 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .skill-container p {
+        font-size: 1rem; /* Smaller paragraph size */
+    }
+
+    .skill-card {
+        margin: 5px; /* Reduce margin for cards */
+        max-width: 100%; /* Full width for cards on smaller screens */
+        padding: 60px;
+    }
+}
+
+/* Responsive styling for mobile phones */
+@media (max-width: 480px) {
+    .skill-container h1 {
+        font-size: 1.8rem; /* Further reduce heading size for mobile */
+    }
+
+    .skill-container p {
+        font-size: 0.9rem; /* Further reduce paragraph size for mobile */
+    }
+
+    .skill-circal {
+        width: 70px; /* Reduce size of circular icons */
+        height: 70px; /* Reduce size of circular icons */
+        font-size: 1.5rem; /* Reduce icon size */
+    }
+
+    .skill-card {
+        padding: 50px; /* Adjust padding for cards */
+        margin: 5px; /* Adjust margin for cards */
+    }
+}
+
+
+/* Courses section */
+.Courses-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.Courses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Courses-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Row styling */
+.Courses-row {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+    flex-wrap: wrap; /* Ensure cards stay on the same row */
+    gap: 30px; /* Add space between cards */
+}
+
+/* Course card styling */
+.Courses-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1 1 calc(33.33% - 20px); /* Flex basis to fit 3 cards in a row with space */
+    margin: 10px 0; /* Optional: vertical margin */
+}
+
+/* Image styling with hover effect */
+.Courses-card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+}
+
+/* Zoom and shadow effect on hover */
+.Courses-card:hover img {
+    transform: scale(1.1); 
+}
+
+.Courses-card:hover {
+    box-shadow: 0 8px 16px rgba(164, 164, 164, 0.3); /* Add shadow effect on hover */
+}
+
+
+.Courses-card h1 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Style for circular icons */
+/* Style for icon and text container */
+.Courses-card .icon-text {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center icon and text vertically */
+    justify-content: flex-start; /* Align the whole icon-text pair to the start (left) */
+    margin: 10px 0; /* Add space between icon-text pairs */
+    position: relative;
+    left: 140px;
+}
+
+/* Icon styling */
+.Courses-card i {
+    font-size: 18px; /* Icon size */
+    color: #000000; /* Icon color */
+    border: 2px solid #000000; /* Add border */
+    border-radius: 50%; /* Make it a circle */
+    width: 40px; /* Set fixed width for the circle */
+    height: 40px; /* Set fixed height for the circle */
+    display: flex; /* Flexbox to center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Style for the text */
+.Courses-card p {
+    font-size: 16px; /* Font size for the text */
+    color: #666; /* Text color */
+    margin: 0; /* Remove margin */
+}
+
+/* Price styling for the last paragraph */
+.Courses-card p:last-child {
+    font-size: 20px; /* Price font size */
+    font-weight: bold; /* Bold price */
+    color: #000000; /* Price color */
+    margin-top: 10px; /* Optional: add margin to separate price from other details */
+}
+
+
+
+/* Responsiveness */
+/* Responsive styling for laptops */
+@media (max-width: 1024px) {
+    .Courses-section h1 {
+        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+    }
+
+    .Courses-card {
+        margin: 10px; /* Adjust margin for cards */
+        flex: 1 1 calc(45% - 20px); /* Fit 2 cards per row on laptops */
+        padding: 20px;
+    }
+
+    .Courses-card h1 {
+        font-size: 22px; /* Slightly smaller course title for laptops */
+    }
+
+    .Courses-card p {
+        font-size: 14px; /* Smaller paragraph size */
+    }
+
+    .Courses-card p:last-child {
+        font-size: 18px; /* Slightly smaller price text */
+    }
+}
+
+/* Responsive styling for tablets (iPads) */
+@media (max-width: 768px) {
+    .Courses-section {
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .Courses-section h1 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    .Courses-card {
+        flex: 1 1 calc(100% - 20px); /* Full-width for cards on tablets */
+        margin: 10px 0; /* Adjust margin */
+        padding: 20px;
+    }
+
+    .Courses-card h1 {
+        font-size: 20px; /* Smaller course title for tablets */
+    }
+
+    .Courses-card p {
+        font-size: 14px; /* Smaller paragraph size */
+    }
+
+    .Courses-card p:last-child {
+        font-size: 16px; /* Smaller price text for tablets */
+    }
+}
+
+/* Responsive styling for mobile phones */
+@media (max-width: 480px) {
+    .Courses-section h1 {
+        font-size: 1.8rem; /* Further reduce heading size for mobile */
+    }
+
+    .Courses-card {
+        margin: 5px; /* Adjust margin for mobile */
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    .Courses-card h1 {
+        font-size: 18px; /* Further reduce course title size for mobile */
+    }
+
+    .Courses-card p {
+        font-size: 12px; /* Smaller paragraph size for mobile */
+    }
+
+    .Courses-card p:last-child {
+        font-size: 14px; /* Further reduce price text for mobile */
+    }
+}
