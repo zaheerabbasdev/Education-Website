@@ -527,14 +527,14 @@
 }
 
 /* Style for circular icons */
-/* Style for icon and text container */
 .Courses-card .icon-text {
     display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Center icon and text vertically */
-    justify-content: flex-start; /* Align the whole icon-text pair to the start (left) */
-    margin: 10px 0; /* Add space between icon-text pairs */
+    align-items: center; /* Align icon and text vertically in the center */
+    margin: 10px 0; /* Reduce the margin between the icon-text pairs */
+    padding: 0; /* Remove unnecessary padding */
+    gap: 10px; /* Adjust space between icon and text */
     position: relative;
-    left: 140px;
+    left: 25px;
 }
 
 /* Icon styling */
@@ -543,12 +543,11 @@
     color: #000000; /* Icon color */
     border: 2px solid #000000; /* Add border */
     border-radius: 50%; /* Make it a circle */
-    width: 40px; /* Set fixed width for the circle */
-    height: 40px; /* Set fixed height for the circle */
+    width: 30px; /* Set fixed width for the circle */
+    height: 30px; /* Set fixed height for the circle */
     display: flex; /* Flexbox to center the icon */
     justify-content: center; /* Horizontally center the icon */
     align-items: center; /* Vertically center the icon */
-    margin-right: 10px; /* Space between icon and text */
 }
 
 /* Style for the text */
@@ -562,8 +561,8 @@
 .Courses-card p:last-child {
     font-size: 20px; /* Price font size */
     font-weight: bold; /* Bold price */
-    color: #000000; /* Price color */
-    margin-top: 10px; /* Optional: add margin to separate price from other details */
+    color: #ffc403; /* Price color */
+    
 }
 
 
@@ -625,6 +624,10 @@
 
 /* Responsive styling for mobile phones */
 @media (max-width: 480px) {
+    .Courses-card .icon-text{
+        position: relative;
+        left: 50px;
+    }
     .Courses-section h1 {
         font-size: 1.8rem; /* Further reduce heading size for mobile */
     }
