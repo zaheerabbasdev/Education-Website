@@ -805,3 +805,94 @@
         transform: translate(-60px)
     }
 }
+
+
+/* Catagories Section */
+
+/* Header styling */
+.catagories-row h1 {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #343a40; /* Dark color for the heading */
+    
+}
+
+/* Paragraph styling */
+.catagories-row p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    color: #555; /* Dark gray color for text */
+    margin-bottom: 40px; /* Space below the paragraph */
+
+}
+
+/* Row for category cards */
+.catagories-row {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+/* Card styling similar to skills section */
+.catagories-card {
+    background-color: white; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 10px; /* Space between cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out; /* Animation for hover effect */
+    flex: 1; /* Allow cards to grow and shrink equally */
+    max-width: 300px; /* Max width for cards */
+    text-align: center; /* Center align text inside the card */
+}
+
+/* Icon styling inside the card */
+.catagories-card i {
+    font-size: 2rem; /* Icon size */
+    color: #000000; /* Icon color */
+    background: #ffffff; /* Background color for circle */
+    border-radius: 50%; /* Make the icon circular */
+    width: 87px; /* Width of the circle */
+    height: 87px; /* Height of the circle */
+    display: flex; /* Flexbox for centering icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    margin: 0 auto 20px; /* Margin for spacing */
+    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); /* Shadow for the circle */
+}
+
+/* Card hover effect */
+.catagories-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Title styling inside the card */
+.catagories-card h1 {
+    font-size: 1.5rem; /* Font size for category title */
+    color: #343a40; /* Dark text color */
+    margin-top: 10px; /* Space above the title */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .catagories-card {
+        max-width: 100%; /* Make cards full width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .catagories-card {
+        margin: 10px auto; /* Reduce margins for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .catagories-card h1 {
+        font-size: 1.3rem; /* Reduce title size on mobile */
+    }
+
+    .catagories-card i {
+        font-size: 1.8rem; /* Adjust icon size on mobile */
+        width: 70px;
+        height: 70px; /* Smaller circle for icons on mobile */
+    }
+}
