@@ -566,6 +566,32 @@
 }
 
 
+/* Style for the 'View All Courses' button */
+.courses-button {
+  display: inline-block;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 12px 24px; /* Padding for the button */
+  margin-top: 80px;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold; 
+  /* text-transform: uppercase;  */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover and focus effect */
+.courses-button:hover,
+.courses-button:focus {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+ 
+}
+
+
+
 
 /* Responsiveness */
 /* Responsive styling for laptops */
@@ -647,5 +673,135 @@
 
     .Courses-card p:last-child {
         font-size: 14px; /* Further reduce price text for mobile */
+    }
+}
+
+
+
+/* Welcome Section */
+/* General container styling for the welcome row */
+.welcome-row {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  margin: 40px 0; /* Add spacing around the section */
+  padding: 20px;
+}
+
+/* Styling for the left column (text) */
+.welcome-row .welcome-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333; /* Darker color for heading */
+  margin-bottom: 20px;
+  margin-left: 120px;
+  margin-top: 100px;
+}
+
+.welcome-row .welcome-content p {
+  font-size: 16px;
+  color: #555; /* Medium grey text */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 20px;
+  margin-left: 120px;
+  text-align: justify;
+}
+
+/* Style for the 'Read More' button */
+.welcome-row .welcome-content a {
+  display: inline-block;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 12px 24px;
+  margin-left: 120px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.welcome-row .welcome-content a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the right column (image) */
+.welcome-row .welcome-content img {
+  max-width: 80%; /* Make image responsive */
+  margin-left: 50px;
+  margin-top: 150px;
+ 
+}
+
+/* Responsive behavior */
+/* Responsive styling for laptops */
+@media (max-width: 1024px) {
+    .welcome-row h1 {
+        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+    }
+
+    .welcome-row p {
+        font-size: 16px; /* Slightly smaller paragraph text for laptops */
+    }
+
+    .welcome-row img {
+        max-width: 90%; /* Reduce image width for laptops */
+        margin-top: 20px;
+    }
+
+    .welcome-row a {
+        padding: 10px 20px; /* Adjust padding for the button */
+    }
+}
+
+/* Responsive styling for tablets (iPads) */
+@media (max-width: 768px) {
+    .welcome-row {
+        flex-direction: column; /* Stack text and image for tablets */
+        text-align: center; /* Center-align text and image */
+    }
+
+    .welcome-row h1 {
+        font-size: 2rem; /* Smaller heading size for tablets */
+    }
+
+    .welcome-row p {
+        font-size: 14px; /* Smaller paragraph text for tablets */
+    }
+
+    .welcome-row img {
+        max-width: 80%; /* Further reduce image width for tablets */
+        margin-top: 20px;
+    }
+
+    .welcome-row a {
+        padding: 8px 18px; /* Adjust padding for the button */
+    }
+}
+
+/* Responsive styling for mobile phones */
+@media (max-width: 480px) {
+    .welcome-row h1 {
+        font-size: 2rem; /* Further reduce heading size for mobile */
+        position: relative;
+        top: 0;
+        right: 60px;
+    }
+
+    .welcome-row p {
+        font-size: 12px; /* Smaller paragraph text for mobile */
+        position: relative;
+        right: 60px;
+        
+    }
+
+    .welcome-row img {
+        max-width: 100%; /* Make image take full width on mobile */
+        margin-top: 40px;
+        transform: translate(-20px);
+    }
+
+    .welcome-row a {
+        padding: 6px 16px; /* Smaller button padding for mobile */
+        font-size: 14px; /* Reduce button text size */
+        transform: translate(-60px)
     }
 }
