@@ -160,30 +160,28 @@
   
 }
 
-/* Start Hero Section */
-/* Slideshow container */
-/* Start Hero Section */
+
 /* Slideshow container */
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     overflow: hidden;
 }
 
 /* Slides */
 .mySlides {
-    display: none; /* Ensure slides are hidden by default */
+    display: none;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    position: absolute; /* Change to absolute to stack slides */
+    height: 100vh; 
+    position: absolute; 
 }
 
 /* Slide Image */
 .slide-image {
     width: 100%;
-    height: 90vh; /* Make the image cover full viewport height */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
+    height: 90vh; 
+    object-fit: cover; 
 }
 
 /* Next and Previous buttons */
@@ -219,7 +217,7 @@
     text-align: center;
     padding: 16px;
     position: absolute;
-    bottom: -10px; /* Position at the bottom of the slideshow */
+    bottom: -10px; 
     width: 100%;
 }
 
@@ -263,25 +261,25 @@
 /* Styles for Laptops (max-width: 1024px) */
 @media only screen and (max-width: 1024px) {
     .slideshow-container {
-        height: 70vh; /* Adjust height for laptops */
+        height: 70vh; 
     }
 
     .slide-image {
-        height: 70vh; /* Adjust image height */
+        height: 70vh; 
     }
 
     .prev, .next {
-        font-size: 22px; /* Adjust button font size */
-        padding: 12px; /* Adjust padding */
+        font-size: 22px; 
+        padding: 12px; 
     }
 
     .dots-container {
-        bottom: 15px; /* Position dots */
+        bottom: 15px;
     }
 
     .dot {
-        height: 12px; /* Adjust dot size */
-        width: 12px; /* Adjust dot size */
+        height: 12px; 
+        width: 12px;
         position: relative;
         top: -100px;
         
@@ -291,16 +289,16 @@
 /* Styles for iPads (max-width: 768px) */
 @media only screen and (max-width: 768px) {
     .slideshow-container {
-        height: 60vh; /* Reduce height for iPads */
+        height: 60vh; 
     }
 
     .slide-image {
-        height: 40vh; /* Match image height */
+        height: 40vh; 
     }
 
     .prev, .next {
-        font-size: 20px; /* Smaller button font size */
-        padding: 10px; /* Adjust padding */
+        font-size: 20px; 
+        padding: 10px;
     }
 
     .dots-container {
@@ -308,8 +306,8 @@
     }
 
     .dot {
-        height: 10px; /* Smaller dots */
-        width: 10px; /* Smaller dots */
+        height: 10px; 
+        width: 10px; 
         position: relative;
         top: -320px;
       
@@ -319,25 +317,25 @@
 /* Styles for Mobile Phones (max-width: 480px) */
 @media only screen and (max-width: 480px) {
     .slideshow-container {
-        height: 50vh; /* Further reduce height for mobile */
+        height: 50vh; 
     }
 
     .slide-image {
-        height: 20vh; /* Match image height */
+        height: 20vh; 
     }
 
     .prev, .next {
-        font-size: 18px; /* Smaller button font size */
-        padding: 8px; /* Adjust padding */
+        font-size: 18px; 
+        padding: 8px; 
     }
 
     .dots-container {
-        bottom: 8px; /* Adjust dot position */
+        bottom: 8px; 
     }
 
     .dot {
-        height: 8px; /* Smaller dots */
-        width: 8px; /* Smaller dots */
+        height: 8px; 
+        width: 8px; 
         position: relative;
         top: -650px;
     }
@@ -348,21 +346,21 @@
 .skill-section {
     padding: 60px 20px; 
     background-color: #f8f9fa;
-    text-align: center; /* Center align text */
+    text-align: center; 
 }
 
 /* Header styling */
 .skill-container h1 {
-    font-size: 2.5rem; /* Font size for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #343a40; /* Dark color for the heading */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #343a40; 
 }
 
 /* Paragraph styling */
 .skill-container p {
-    font-size: 1.2rem; /* Font size for the paragraph */
-    color: #555; /* Dark gray color for text */
-    margin-bottom: 40px; /* Space below the paragraph */
+    font-size: 1.2rem; 
+    color: #555;
+    margin-bottom: 40px; 
 }
 
 /* Row for cards */
@@ -373,51 +371,51 @@
 }
 
 .skill-circal {
-    width: 87px; /* Width of the circular icon */
-    height: 87px; /* Height of the circular icon */
-    background: #ffffff; /* Background color */
-    border-radius: 50%; /* Circle shape */
+    width: 87px;
+    height: 87px; 
+    background: #ffffff; 
+    border-radius: 50%;
     margin: auto; /* Center horizontally */
-    margin-bottom: 20px; /* Space below the circle */
-    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); /* Shadow effect */
-    display: flex; /* Flexbox for centering icon */
-    justify-content: center; /* Center icon horizontally */
-    align-items: center; /* Center icon vertically */
-    color: #000000; /* Icon color */
-    font-size: 2rem; /* Icon size */
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #000000; 
+    font-size: 2rem; 
 }
 
 
 /* Card styling */
 .skill-card {
-    background-color: white; /* Card background color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Inner padding */
-    margin: 10px; /* Space between cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s; /* Animation for hover effect */
+    background-color: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
     flex: 1; /* Allow cards to grow and shrink equally */
-    max-width: 400px; /* Max width for cards */
+    max-width: 400px; 
 }
 
 /* Card hover effect */
 .skill-card:hover {
     
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
 }
 /* Responsive styling for laptops */
 @media (max-width: 1024px) {
     .skill-container h1 {
-        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+        font-size: 2.2rem; 
     }
 
     .skill-container p {
-        font-size: 1.1rem; /* Smaller paragraph size */
+        font-size: 1.1rem; 
     }
 
     .skill-card {
-        margin: 10px; /* Space between cards */
-        max-width: 300px; /* Reduce max width for laptops */
+        margin: 10px; 
+        max-width: 300px; 
         padding: 120px;
     }
 }
@@ -425,20 +423,20 @@
 /* Responsive styling for tablets (iPads) */
 @media (max-width: 768px) {
     .skill-section {
-        padding: 40px 10px; /* Adjust padding for smaller screens */
+        padding: 40px 10px; 
     }
 
     .skill-container h1 {
-        font-size: 2rem; /* Smaller heading size */
+        font-size: 2rem; 
     }
 
     .skill-container p {
-        font-size: 1rem; /* Smaller paragraph size */
+        font-size: 1rem; 
     }
 
     .skill-card {
-        margin: 5px; /* Reduce margin for cards */
-        max-width: 100%; /* Full width for cards on smaller screens */
+        margin: 5px; 
+        max-width: 100%; 
         padding: 60px;
     }
 }
@@ -446,22 +444,22 @@
 /* Responsive styling for mobile phones */
 @media (max-width: 480px) {
     .skill-container h1 {
-        font-size: 1.8rem; /* Further reduce heading size for mobile */
+        font-size: 1.8rem; 
     }
 
     .skill-container p {
-        font-size: 0.9rem; /* Further reduce paragraph size for mobile */
+        font-size: 0.9rem; 
     }
 
     .skill-circal {
-        width: 70px; /* Reduce size of circular icons */
-        height: 70px; /* Reduce size of circular icons */
-        font-size: 1.5rem; /* Reduce icon size */
+        width: 70px; 
+        height: 70px; 
+        font-size: 1.5rem; 
     }
 
     .skill-card {
-        padding: 50px; /* Adjust padding for cards */
-        margin: 5px; /* Adjust margin for cards */
+        padding: 50px;
+        margin: 5px; 
     }
 }
 
@@ -487,9 +485,9 @@
 /* Row styling */
 .Courses-row {
     display: flex;
-    justify-content: space-between; /* Space between cards */
+    justify-content: space-between; 
     flex-wrap: wrap; /* Ensure cards stay on the same row */
-    gap: 30px; /* Add space between cards */
+    gap: 30px; 
 }
 
 /* Course card styling */
@@ -500,7 +498,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     flex: 1 1 calc(33.33% - 20px); /* Flex basis to fit 3 cards in a row with space */
-    margin: 10px 0; /* Optional: vertical margin */
+    margin: 10px 0; 
 }
 
 /* Image styling with hover effect */
@@ -516,7 +514,7 @@
 }
 
 .Courses-card:hover {
-    box-shadow: 0 8px 16px rgba(164, 164, 164, 0.3); /* Add shadow effect on hover */
+    box-shadow: 0 8px 16px rgba(164, 164, 164, 0.3); 
 }
 
 
@@ -528,40 +526,40 @@
 
 /* Style for circular icons */
 .Courses-card .icon-text {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Align icon and text vertically in the center */
-    margin: 10px 0; /* Reduce the margin between the icon-text pairs */
-    padding: 0; /* Remove unnecessary padding */
-    gap: 10px; /* Adjust space between icon and text */
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+    padding: 0; 
+    gap: 10px; 
     position: relative;
     left: 25px;
 }
 
 /* Icon styling */
 .Courses-card i {
-    font-size: 18px; /* Icon size */
-    color: #000000; /* Icon color */
-    border: 2px solid #000000; /* Add border */
-    border-radius: 50%; /* Make it a circle */
-    width: 30px; /* Set fixed width for the circle */
-    height: 30px; /* Set fixed height for the circle */
-    display: flex; /* Flexbox to center the icon */
-    justify-content: center; /* Horizontally center the icon */
-    align-items: center; /* Vertically center the icon */
+    font-size: 18px; 
+    color: #000000; 
+    border: 2px solid #000000; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Style for the text */
 .Courses-card p {
-    font-size: 16px; /* Font size for the text */
-    color: #666; /* Text color */
-    margin: 0; /* Remove margin */
+    font-size: 16px; 
+    color: #666; 
+    margin: 0; 
 }
 
 /* Price styling for the last paragraph */
 .Courses-card p:last-child {
-    font-size: 20px; /* Price font size */
-    font-weight: bold; /* Bold price */
-    color: #ffc403; /* Price color */
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #ffc403; 
     
 }
 
@@ -569,82 +567,81 @@
 /* Style for the 'View All Courses' button */
 .courses-button {
   display: inline-block;
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Text color */
-  padding: 12px 24px; /* Padding for the button */
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 12px 24px; 
   margin-top: 80px;
-  border-radius: 50px; /* Rounded corners */
-  font-size: 16px; /* Font size */
+  border-radius: 50px; 
+  font-size: 16px; 
   font-weight: bold; 
   /* text-transform: uppercase;  */
-  text-decoration: none; /* Remove underline */
-  transition: all 0.3s ease; /* Smooth transition */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Hover and focus effect */
 .courses-button:hover,
 .courses-button:focus {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
  
 }
 
 
 
 
-/* Responsiveness */
 /* Responsive styling for laptops */
 @media (max-width: 1024px) {
     .Courses-section h1 {
-        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+        font-size: 2.2rem; 
     }
 
     .Courses-card {
-        margin: 10px; /* Adjust margin for cards */
+        margin: 10px; 
         flex: 1 1 calc(45% - 20px); /* Fit 2 cards per row on laptops */
         padding: 20px;
     }
 
     .Courses-card h1 {
-        font-size: 22px; /* Slightly smaller course title for laptops */
+        font-size: 22px; 
     }
 
     .Courses-card p {
-        font-size: 14px; /* Smaller paragraph size */
+        font-size: 14px; 
     }
 
     .Courses-card p:last-child {
-        font-size: 18px; /* Slightly smaller price text */
+        font-size: 18px; 
     }
 }
 
 /* Responsive styling for tablets (iPads) */
 @media (max-width: 768px) {
     .Courses-section {
-        padding: 40px 10px; /* Adjust padding for smaller screens */
+        padding: 40px 10px; 
     }
 
     .Courses-section h1 {
-        font-size: 2rem; /* Smaller heading size */
+        font-size: 2rem; 
     }
 
     .Courses-card {
-        flex: 1 1 calc(100% - 20px); /* Full-width for cards on tablets */
-        margin: 10px 0; /* Adjust margin */
+        flex: 1 1 calc(100% - 20px);
+        margin: 10px 0; 
         padding: 20px;
     }
 
     .Courses-card h1 {
-        font-size: 20px; /* Smaller course title for tablets */
+        font-size: 20px; 
     }
 
     .Courses-card p {
-        font-size: 14px; /* Smaller paragraph size */
+        font-size: 14px; 
     }
 
     .Courses-card p:last-child {
-        font-size: 16px; /* Smaller price text for tablets */
+        font-size: 16px; 
     }
 }
 
@@ -655,35 +652,35 @@
         left: 50px;
     }
     .Courses-section h1 {
-        font-size: 1.8rem; /* Further reduce heading size for mobile */
+        font-size: 1.8rem; 
     }
 
     .Courses-card {
-        margin: 5px; /* Adjust margin for mobile */
-        padding: 15px; /* Reduce padding for mobile */
+        margin: 5px; 
+        padding: 15px; 
     }
 
     .Courses-card h1 {
-        font-size: 18px; /* Further reduce course title size for mobile */
+        font-size: 18px; 
     }
 
     .Courses-card p {
-        font-size: 12px; /* Smaller paragraph size for mobile */
+        font-size: 12px; 
     }
 
     .Courses-card p:last-child {
-        font-size: 14px; /* Further reduce price text for mobile */
+        font-size: 14px; 
     }
 }
 
 
 
 /* Welcome Section */
-/* General container styling for the welcome row */
+
 .welcome-row {
   display: flex;
-  align-items: center; /* Vertically align items */
-  margin: 40px 0; /* Add spacing around the section */
+  align-items: center; 
+  margin: 40px 0; 
   padding: 20px;
 }
 
@@ -691,7 +688,7 @@
 .welcome-row .welcome-content h1 {
   font-size: 40px;
   font-weight: bold;
-  color: #333; /* Darker color for heading */
+  color: #333; 
   margin-bottom: 20px;
   margin-left: 120px;
   margin-top: 100px;
@@ -699,8 +696,8 @@
 
 .welcome-row .welcome-content p {
   font-size: 16px;
-  color: #555; /* Medium grey text */
-  line-height: 1.6; /* Improve readability */
+  color: #555;
+  line-height: 1.6;
   margin-bottom: 20px;
   margin-left: 120px;
   text-align: justify;
@@ -709,190 +706,493 @@
 /* Style for the 'Read More' button */
 .welcome-row .welcome-content a {
   display: inline-block;
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #007bff; 
+  color: #fff; 
   padding: 12px 24px;
   margin-left: 120px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
 .welcome-row .welcome-content a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 /* Styling for the right column (image) */
 .welcome-row .welcome-content img {
-  max-width: 80%; /* Make image responsive */
+  max-width: 80%; 
   margin-left: 50px;
   margin-top: 150px;
  
 }
 
-/* Responsive behavior */
+
 /* Responsive styling for laptops */
 @media (max-width: 1024px) {
     .welcome-row h1 {
-        font-size: 2.2rem; /* Slightly smaller heading for laptops */
+        font-size: 2.2rem; 
     }
 
     .welcome-row p {
-        font-size: 16px; /* Slightly smaller paragraph text for laptops */
+        font-size: 16px; 
     }
 
     .welcome-row img {
-        max-width: 90%; /* Reduce image width for laptops */
+        max-width: 90%; 
         margin-top: 20px;
     }
 
     .welcome-row a {
-        padding: 10px 20px; /* Adjust padding for the button */
+        padding: 10px 20px; 
     }
 }
 
 /* Responsive styling for tablets (iPads) */
 @media (max-width: 768px) {
     .welcome-row {
-        flex-direction: column; /* Stack text and image for tablets */
-        text-align: center; /* Center-align text and image */
+        flex-direction: column; 
+        text-align: center; /
     }
 
     .welcome-row h1 {
-        font-size: 2rem; /* Smaller heading size for tablets */
+        font-size: 2rem; 
     }
 
     .welcome-row p {
-        font-size: 14px; /* Smaller paragraph text for tablets */
+        font-size: 14px; 
     }
 
     .welcome-row img {
-        max-width: 80%; /* Further reduce image width for tablets */
+        max-width: 80%; 
         margin-top: 20px;
     }
 
     .welcome-row a {
-        padding: 8px 18px; /* Adjust padding for the button */
+        padding: 8px 18px; 
     }
 }
 
 /* Responsive styling for mobile phones */
 @media (max-width: 480px) {
     .welcome-row h1 {
-        font-size: 2rem; /* Further reduce heading size for mobile */
+        font-size: 2rem; 
         position: relative;
         top: 0;
         right: 60px;
     }
 
     .welcome-row p {
-        font-size: 12px; /* Smaller paragraph text for mobile */
+        font-size: 12px; 
         position: relative;
         right: 60px;
         
     }
 
     .welcome-row img {
-        max-width: 100%; /* Make image take full width on mobile */
+        max-width: 100%; 
         margin-top: 40px;
         transform: translate(-20px);
     }
 
     .welcome-row a {
-        padding: 6px 16px; /* Smaller button padding for mobile */
-        font-size: 14px; /* Reduce button text size */
+        padding: 6px 16px; 
+        font-size: 14px; 
         transform: translate(-60px)
     }
 }
 
 
 /* Catagories Section */
+.catagories-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center; 
+}
 
 /* Header styling */
-.catagories-row h1 {
-    font-size: 2.5rem; /* Font size for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #343a40; /* Dark color for the heading */
-    
+.catagories-row .top-heading {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    margin-top: 150px;
+    color: #343a40; 
+    text-align: center; 
 }
 
 /* Paragraph styling */
 .catagories-row p {
-    font-size: 1.2rem; /* Font size for the paragraph */
-    color: #555; /* Dark gray color for text */
-    margin-bottom: 40px; /* Space below the paragraph */
-
+    font-size: 1.2rem; 
+    color: #555; 
+    margin-bottom: 40px;
+    text-align: center; 
 }
 
 /* Row for category cards */
 .catagories-row {
-    display: flex; /* Use flexbox for row layout */
-    justify-content: center; /* Center the cards horizontally */
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 /* Card styling similar to skills section */
 .catagories-card {
-    background-color: white; /* Card background color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Inner padding */
-    margin: 10px; /* Space between cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s ease-in-out; /* Animation for hover effect */
-    flex: 1; /* Allow cards to grow and shrink equally */
-    max-width: 300px; /* Max width for cards */
-    text-align: center; /* Center align text inside the card */
+    background-color: white;
+    border-radius: 8px; 
+    padding: 20px;
+    margin: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center; 
 }
 
 /* Icon styling inside the card */
 .catagories-card i {
-    font-size: 2rem; /* Icon size */
-    color: #000000; /* Icon color */
-    background: #ffffff; /* Background color for circle */
-    border-radius: 50%; /* Make the icon circular */
-    width: 87px; /* Width of the circle */
-    height: 87px; /* Height of the circle */
-    display: flex; /* Flexbox for centering icon */
-    justify-content: center; /* Center icon horizontally */
-    align-items: center; /* Center icon vertically */
-    margin: 0 auto 20px; /* Margin for spacing */
-    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); /* Shadow for the circle */
+    font-size: 2rem; 
+    color: #000000; 
+    background: #ffffff; 
+    border-radius: 50%; 
+    width: 87px; 
+    height: 87px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto 20px; 
+    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20); 
 }
 
 /* Card hover effect */
 .catagories-card:hover {
     /* transform: translateY(-5px); */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Title styling inside the card */
 .catagories-card h1 {
-    font-size: 1.5rem; /* Font size for category title */
-    color: #343a40; /* Dark text color */
-    margin-top: 10px; /* Space above the title */
+    font-size: 1.5rem; 
+    color: #343a40; 
+    margin-top: 10px;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .catagories-card {
-        max-width: 100%; /* Make cards full width on tablets */
+
+/* Style for the 'View All Courses' button */
+.Catagorie-button {
+  display: inline-block;
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 12px 24px; 
+  margin-top: 40px;
+  border-radius: 50px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  /* text-transform: uppercase; */
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Container to center the button */
+.Catagorie-button-container {
+  text-align: center; 
+  margin-top: 40px; 
+}
+
+/* Hover and focus effect */
+.Catagorie-button:hover,
+.Catagorie-button:focus {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+
+/* Responsive adjustments for laptops */
+@media (max-width: 1024px) {
+    .catagories-row .top-heading {
+        font-size: 2.2rem; 
     }
-}
 
-@media (max-width: 480px) {
     .catagories-card {
-        margin: 10px auto; /* Reduce margins for smaller screens */
-        padding: 15px; /* Adjust padding */
+        margin: 10px; 
+        flex: 1 1 calc(45% - 20px); /* Fit 2 cards per row on laptops */
+        padding: 20px;
     }
 
     .catagories-card h1 {
-        font-size: 1.3rem; /* Reduce title size on mobile */
+        font-size: 1.4rem; 
     }
 
     .catagories-card i {
-        font-size: 1.8rem; /* Adjust icon size on mobile */
+        font-size: 1.8rem; 
+    }
+}
+
+/* Responsive adjustments for tablets (iPads) */
+@media (max-width: 768px) {
+    .catagories-row .top-heading {
+        font-size: 2rem; 
+    }
+
+    .catagories-card {
+        flex: 1 1 calc(100% - 20px); /* Full width for cards on tablets */
+        margin: 10px 0; 
+        padding: 20px;
+    }
+
+    .catagories-card h1 {
+        font-size: 1.3rem; 
+    }
+
+    .catagories-card i {
+        font-size: 1.6rem; 
+    }
+}
+
+/* Responsive adjustments for mobile phones */
+@media (max-width: 480px) {
+    .catagories-row .top-heading {
+        font-size: 1.8rem; 
+    }
+
+    .catagories-card {
+        margin: 5px auto; 
+        padding: 15px; 
+    }
+
+    .catagories-card h1 {
+        font-size: 1.2rem; 
+    }
+
+    .catagories-card i {
+        font-size: 1.5rem; 
         width: 70px;
-        height: 70px; /* Smaller circle for icons on mobile */
+        height: 70px; 
+    }
+}
+
+
+/* Video Section */
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+/* Left column - video thumbnail styling */
+.video-thumbnail {
+    position: relative;
+    text-align: center;
+}
+
+.video-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 200px;
+}
+
+/* Play button styling */
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.video-play-button i {
+    font-size: 2rem;
+    color: #ff9900;
+}
+
+.video-play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Right column - video details styling */
+.video-details {
+    padding: 20px;
+}
+
+.video-details h1 {
+    font-size: 3rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    margin-top: 220px;
+    margin-left: 50px;
+}
+
+.video-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+/* Features styling */
+.video-feature {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+.video-feature i {
+    font-size: 2rem;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 87px;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: 0 4px 30px rgba(155, 155, 155, 0.20);
+    transform: translate(50px);
+}
+
+.feature-text h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.feature-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Responsive adjustments for laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .video-details h1 {
+        font-size: 2.5rem; 
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .video-details p {
+        font-size: 1.1rem;
+        margin-left: 0;
+    }
+
+    .video-feature i {
+        font-size: 1.8rem; 
+        width: 70px; 
+        height: 70px; 
+        transform: translate(0);
+    }
+
+    .feature-text h3 {
+        font-size: 1.4rem; 
+        margin-left: 0;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+
+    .video-thumbnail img {
+        margin-top: 100px;
+    }
+}
+
+/* Responsive adjustments for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-thumbnail img {
+        margin-top: 50px;
+    }
+
+    .video-details h1 {
+        font-size: 2rem; 
+        margin-top: 50px; 
+        margin-left: 0;
+    }
+
+    .video-details p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .video-feature i {
+        font-size: 1.6rem;
+        width: 60px;
+        height: 60px;
+        transform: translate(0);
+    }
+
+    .feature-text h3 {
+        font-size: 1.3rem;
+        margin-left: 0;
+    }
+
+    .feature-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive adjustments for mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-thumbnail img {
+        margin-top: 30px;
+    }
+
+    .video-details h1 {
+        font-size: 1.8rem; 
+        margin-top: 30px; 
+        margin-left: 0;
+    }
+
+    .video-details p {
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .video-feature {
+        justify-content: center; /* Align icon and text to center */
+        flex-direction: column; /* Stack icon and text vertically */
+        text-align: left;
+    }
+
+    .video-feature i {
+        font-size: 1.5rem; 
+        width: 55px;
+        height: 55px;
+        margin-bottom: 10px; /* Add space between icon and text */
+        transform: translate(-140px);
+    }
+
+    .feature-text {
+        text-align: left;
+    }
+
+    .feature-text h3 {
+        font-size: 1.1rem;
+        margin-left: 0;
+        margin-bottom: 5px; /* Add small space between heading and paragraph */
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+        margin-left: 0;
     }
 }
