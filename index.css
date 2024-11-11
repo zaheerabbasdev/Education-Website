@@ -1196,3 +1196,224 @@
         margin-left: 0;
     }
 }
+
+
+/* Mentor Section Styling */
+.mentor-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Header Styling */
+.mentor-heading h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.mentor-heading p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Row for mentor cards */
+.mentor-container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Mentor Card Styling */
+.mentor-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.mentor-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling inside the card */
+.mentor-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Title and profession styling inside the card */
+.mentor-card h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.mentor-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Adjustments */
+
+/* Laptops (Medium Screens) */
+@media (max-width: 1024px) {
+    .mentor-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .mentor-card {
+        flex: 1 1 calc(45% - 20px); /* Fit 2 cards per row on laptops */
+        padding: 20px;
+    }
+
+    .mentor-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .mentor-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets (Small Screens) */
+@media (max-width: 768px) {
+    .mentor-heading h1 {
+        font-size: 2rem;
+    }
+
+    .mentor-card {
+        flex: 1 1 calc(100% - 20px); /* Full width for each card on tablets */
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .mentor-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .mentor-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Phones (Very Small Screens) */
+@media (max-width: 480px) {
+    .mentor-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .mentor-card {
+        flex: 1 1 100%; /* Full width for each card on mobile */
+        margin-bottom: 20px;
+    }
+
+    .mentor-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .mentor-card p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Reviews Section  */
+/* Overall Container Styles */
+.reviews-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Person Image Section */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.person-images {
+    text-align: center;
+}
+
+.review-circal {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-circal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-circal:hover {
+    transform: scale(1.1);
+}
+
+/* Person Information Section */
+.persons-information {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.persons-information h3 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.persons-information p {
+    font-size: 1.1em;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Arrow Buttons Section */
+.arrow-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-buttons i {
+    font-size: 2em;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrow-buttons i:hover {
+    color: #007bff;
+}
