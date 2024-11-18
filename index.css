@@ -1327,93 +1327,136 @@
     }
 }
 
-
-/* Reviews Section  */
-/* Overall Container Styles */
-.reviews-section {
-    text-align: center;
-    margin-bottom: 30px;
+/* Testimonial Section */
+#testimonials {
+  background-color: #ffffff;
 }
 
-.reviews-section h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    margin: 0;
+#testimonials .carousel-item {
+  padding: 2rem;
 }
 
-/* Person Image Section */
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+#testimonials img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-.col-md-4 {
-    display: flex;
-    justify-content: center;
+#testimonials .testimonial-content {
+  padding: 1rem;
 }
 
-.person-images {
-    text-align: center;
+#testimonials h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.review-circal {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+#testimonials .lead {
+  font-style: italic;
+  color: #000000;
 }
 
-.review-circal img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.active{
+    background-color: #ffffff;
+    
 }
 
-.review-circal:hover {
-    transform: scale(1.1);
+.carousel-control-next-icon{
+    background-color: #f57c00;
 }
 
-/* Person Information Section */
-.persons-information {
-    text-align: center;
-    margin-bottom: 30px;
+.carousel-control-prev-icon{
+    background-color: #f57c00;
 }
 
-.persons-information h3 {
-    font-size: 2em;
-    font-weight: 600;
-    color: #444;
-    margin-bottom: 10px;
+.carousel-indicators [data-bs-target]{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6c757d; /* Default dot color */
+  border: none;
+  transition: background-color 0.3s ease;
+    
 }
 
-.persons-information p {
-    font-size: 1.1em;
-    color: #777;
-    line-height: 1.6;
-    margin-bottom: 15px;
+
+
+/* Blog Section Styles */
+.blog-section {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light background */
 }
 
-/* Arrow Buttons Section */
-.arrow-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.arrow-buttons i {
-    font-size: 2em;
-    color: #444;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.blog-heading h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
 }
 
-.arrow-buttons i:hover {
-    color: #007bff;
+.blog-paragraph p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  
+}
+
+.blog-cards .col-md-4 {
+  flex: 1;
+  max-width: 300px;
+}
+
+.blog-image {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Hover effect for scaling the image */
+.blog-image:hover img {
+  transform: scale(1.1); /* Scale the image */
+}
+
+.blog-image h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.blog-image p {
+  font-size: 0.95rem;
+  color: #777;
+  padding: 0 15px 15px;
+}
+
+/* Card hover shadow effect */
+.blog-image:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }

@@ -24,6 +24,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -413,48 +418,229 @@
           </div>
         </div>
       </div>
-
-      <!-- Reviews Section  -->
-      <div class="row reviews-section">
-        <h1>What Our Ex-Students Says</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-4 person-images">
-          <div class="review-circal">
-            <img src="images/full-stack.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="review-circal">
-            <img src="images/full-stack.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="review-circal">
-            <img src="images/full-stack.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="row persons-information">
-        <h3>Zaheer abbas</h3>
-        <p>Web Developer</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
-          reprehenderit blanditiis iure rerum culpa eligendi ipsa, natus ex at
-          optio, dolorum sunt odit. Laudantium sit corrupti nesciunt facere
-          culpa.
-        </p>
-      </div>
-      <div class="row arrow-buttons">
-        <i class="fa-solid fa-less-than"></i>
-        <i class="fa-solid fa-greater-than"></i>
-      </div>
-      <!-- End of Reviews Secton -->
     </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Learners Say</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="images/full-stack.jpg"
+                    class="rounded-circle img-fluid"
+                    alt="Alex P."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial-content">
+                    <p class="lead">
+                      "This platform has completely changed how I approach
+                      learning. The resources are top-notch, and the instructors
+                      are incredibly supportive. I’ve gained so much confidence
+                      in my abilities!"
+                    </p>
+                    <h5 class="mt-4">Alex P.</h5>
+                    <p class="text-muted">High School Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="images/full-stack.jpg"
+                    class="rounded-circle img-fluid"
+                    alt="Maria S."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial-content">
+                    <p class="lead">
+                      "The courses are practical and easy to follow. I love how
+                      interactive the lessons are. It made learning new concepts
+                      really fun and engaging."
+                    </p>
+                    <h5 class="mt-4">Maria S.</h5>
+                    <p class="text-muted">College Freshman</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="images/full-stack.jpg"
+                    class="rounded-circle img-fluid"
+                    alt="John D."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial-content">
+                    <p class="lead">
+                      "Thanks to this platform, I was able to upskill and land a
+                      better job. The flexibility of the courses allowed me to
+                      learn at my own pace while managing my work schedule."
+                    </p>
+                    <h5 class="mt-4">John D.</h5>
+                    <p class="text-muted">Working Professional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="images/full-stack.jpg"
+                    class="rounded-circle img-fluid"
+                    alt="Lisa K."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="testimonial-content">
+                    <p class="lead">
+                      "Not only are the courses amazing, but the community is so
+                      supportive. It feels like I’m part of a learning family
+                      where everyone wants to see each other succeed."
+                    </p>
+                    <h5 class="mt-4">Lisa K.</h5>
+                    <p class="text-muted">Graduate Student</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+
+  <section class="blog-section" id="blog">
+  <div class="blog-container">
+    <div class="row blog-heading">
+      <h1>From The Blog</h1>
+    </div>
+    <div class="row blog-paragraph">
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        <br />
+        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam.
+      </p>
+    </div>
+
+    <div class="row blog-cards">
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="blog-image">
+          <img src="images/full-stack.jpg" alt="Modern website design tools">
+          <h4>Modern website design</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.</p>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-4">
+        <div class="blog-image">
+          <img src="images/full-stack.jpg" alt="Creative coding practices">
+          <h4>Creative coding practices</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.</p>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-4">
+        <div class="blog-image">
+          <img src="images/full-stack.jpg" alt="Creative coding practices">
+          <h4>Creative coding practices</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.</p>
+        </div>
+      </div>
+
+      <!-- Blog Card 4 -->
+      <div class="col-md-4">
+        <div class="blog-image">
+          <img src="images/full-stack.jpg" alt="Understanding user interfaces">
+          <h4>Understanding users</h4>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- AOS Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
