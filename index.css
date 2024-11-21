@@ -1382,81 +1382,241 @@
 
 
 /* Blog Section Styles */
-.blog-section {
-  padding: 60px 0;
-  background-color: #f8f9fa; /* Light background */
+.Blog-section {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-.blog-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* Header Styling */
+.Blog-heading h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
-.blog-heading h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
+.Blog-heading p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Row for mentor cards */
+.Blog-container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Mentor Card Styling */
+.Blog-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.Blog-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling inside the card */
+.Blog-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.Blog-card:hover img{
+    transform: scale(1.1);
+}
+
+/* Title and profession styling inside the card */
+.Blog-card h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.Blog-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Adjustments */
+
+/* Laptops (Medium Screens) */
+@media (max-width: 1024px) {
+    .Blog-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .Blog-card {
+        flex: 1 1 calc(45% - 20px); /* Fit 2 cards per row on laptops */
+        padding: 20px;
+    }
+
+    .Blog-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .Blog-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablets (Small Screens) */
+@media (max-width: 768px) {
+    .Blog-heading h1 {
+        font-size: 2rem;
+    }
+
+    .Blog-card {
+        flex: 1 1 calc(100% - 20px); /* Full width for each card on tablets */
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .Blog-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .Blog-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Phones (Very Small Screens) */
+@media (max-width: 480px) {
+    .Blog-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .Blog-card {
+        flex: 1 1 100%; /* Full width for each card on mobile */
+        margin-bottom: 20px;
+    }
+
+    .Blog-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .Blog-card p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Form Section */
+.form-section{
+    padding: 300px 30px 0 150px;
+
+}
+
+.form-container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-heading h1{
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.form-heading p{
+    margin-top: 20px;
+}
+
+.form-heading h2 {
+    margin-top: 50px;
+}
+
+.form-heading h3{
+    margin-top: 20px;
+}
+
+
+.form-heading h4{
+    margin-top: 20px;
+}
+
+input[type=text]{
+    padding: 10px;
+    width: 40%;
+    gap: 50px;
+    background-color: #fff;
+    
+}
+
+
+
+input[type=email]{
+    padding: 10px;
+    width: 40%;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+.subject input[type=text]{
+    padding: 10px;
+    width: 84%;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.message textarea{
+    margin-top: 30px;
+    width: 84%;
+    height: 150px;
+    padding: 12px 20px;
+    background-color: #fff;
+    border: 2px solid black;
+    
+}
+
+.message textarea::placeholder{
+    transform: translate(-8px);
+    
+}
+
+.button {
+  display: inline-block; 
+  text-align: center; 
+  background-color: #f57c00;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  margin: 20px; 
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  transform: translate(402px);
+  width: 20%;
+}
+
+.button a {
+  color: #ffffff;
   font-weight: bold;
-  color: #333;
+  font-size: 16px; 
+  text-decoration: none; 
 }
+/* 
+.button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+} */
 
-.blog-paragraph p {
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-.blog-cards {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  
-}
-
-.blog-cards .col-md-4 {
-  flex: 1;
-  max-width: 300px;
-}
-
-.blog-image {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-
-.blog-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease; /* Smooth scaling effect */
-}
-
-/* Hover effect for scaling the image */
-.blog-image:hover img {
-  transform: scale(1.1); /* Scale the image */
-}
-
-.blog-image h4 {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 15px 0;
-  font-weight: bold;
-}
-
-.blog-image p {
-  font-size: 0.95rem;
-  color: #777;
-  padding: 0 15px 15px;
-}
-
-/* Card hover shadow effect */
-.blog-image:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.button a:active {
+  background-color: #003f7f; 
+  transform: translateY(0); 
 }
